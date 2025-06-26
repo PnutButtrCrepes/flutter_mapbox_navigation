@@ -1,3 +1,9 @@
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "7.3.0" apply false
+    id "org.jetbrains.kotlin.android" version "1.8.22" apply false
+}
+
 group 'com.eopeter.fluttermapboxnavigation'
 version '1.0-SNAPSHOT'
 
@@ -49,9 +55,6 @@ rootProject.allprojects {
         }
     }
 }
-
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     namespace 'com.eopeter.fluttermapboxnavigation'
